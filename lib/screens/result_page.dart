@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 import '../constants.dart';
 import '../components/reusable_card.dart';
 import '../components/bottom_button.dart';

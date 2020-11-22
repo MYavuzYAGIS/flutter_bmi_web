@@ -1,7 +1,5 @@
 import 'package:bmi_calculator/screens/result_page.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_web/material.dart';
 import '../components/icon_content.dart';
 import '../components/reusable_card.dart';
 import '../constants.dart';
@@ -53,7 +51,7 @@ class _InputPageState extends State<InputPage> {
                           ? kActiveCardColor
                           : kInactiveCardColor,
                       cardChild: iconContent(
-                        icon: FontAwesomeIcons.mars,
+                        icon: Icons.perm_identity,
                         label: 'MALE',
                       ),
                     ),
@@ -69,7 +67,7 @@ class _InputPageState extends State<InputPage> {
                           ? kActiveCardColor
                           : kInactiveCardColor,
                       cardChild: iconContent(
-                        icon: FontAwesomeIcons.venus,
+                        icon: Icons.pregnant_woman,
                         label: 'FEMALE',
                       ),
                     ),
@@ -147,7 +145,7 @@ class _InputPageState extends State<InputPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: <Widget>[
                             RoundIconButton(
-                              icon: FontAwesomeIcons.minus,
+                              icon: Icons.arrow_downward,
                               onPressed: () {
                                 setState(() {
                                   weight = weight - 1;
@@ -155,7 +153,7 @@ class _InputPageState extends State<InputPage> {
                               },
                             ),
                             RoundIconButton(
-                              icon: FontAwesomeIcons.plus,
+                              icon: Icons.arrow_upward,
                               onPressed: () {
                                 setState(() {
                                   weight = weight + 1;
@@ -187,7 +185,7 @@ class _InputPageState extends State<InputPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: <Widget>[
                             RoundIconButton(
-                              icon: FontAwesomeIcons.minus,
+                              icon: Icons.arrow_downward,
                               onPressed: () {
                                 setState(() {
                                   age = age - 1;
@@ -195,7 +193,7 @@ class _InputPageState extends State<InputPage> {
                               },
                             ),
                             RoundIconButton(
-                              icon: FontAwesomeIcons.plus,
+                              icon: Icons.arrow_upward,
                               onPressed: () {
                                 setState(() {
                                   age = age + 1;
